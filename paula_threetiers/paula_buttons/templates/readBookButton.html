@@ -1,0 +1,29 @@
+<table border = 1>
+    {% for book in list %}
+    <tr>
+      <td> {{book[0]}} </td>
+      <td> {{book[1]}} </td>
+      <td> {{book[2]}} </td>      
+      <td> {{book[3]}} </td>      
+      <td> {{book[4]}} </td>
+      <td> {{book[5]}} </td> 
+      <td> {{book[6]}} </td> 
+      <td> {{book[7]}} </td> 
+      <td> {{book[8]}} </td> 
+      <td> {{book[9]}} </td> 
+      <td> {{book[10]}} </td> 
+      <td> 
+        <a href="/Book?BookID={{book[0]}}&Title={{book[5]}}">
+            <img src="/static/edit.png" width="30"> 
+        </a>
+      </td>
+      <td> 
+        <a href="/deleteBookButton?BookID={{book[0]}}">
+            <img src="/static/delete.png" width="30"> 
+        </a>
+      </td>
+
+    </tr>
+    {% endfor %}
+  </table>
+</table>

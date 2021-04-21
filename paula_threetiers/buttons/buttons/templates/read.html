@@ -1,0 +1,22 @@
+<table border = 1>
+    {% for college in list %}
+    <tr>
+      <td> {{college[0]}} </td>
+      <td> {{college[1]}} </td>
+      <td> {{college[2]}} </td>      
+      <td> {{college[3]}} </td>      
+      <td> {{college[4]}} </td>
+      <td> 
+        <a href="/college?id={{college[0]}}&name={{college[1]}}">
+            <img src="/static/edit.png" width="30"> 
+        </a>
+      </td>
+      <td> 
+        <a href="/delete?id={{college[0]}}">
+            <img src="/static/delete.png" width="30"> 
+        </a>
+      </td>
+
+    </tr>
+    {% endfor %}
+  </table>

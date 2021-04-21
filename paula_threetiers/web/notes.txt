@@ -1,0 +1,23 @@
+
+--------------------------
+STEPS - COMMAND LINE
+--------------------------
+
+ - Install python3
+ - At command line, pip3 install mysql-connector-python
+ - In editor, import mysql.connector
+
+--------------------------
+STEPS - WEB APP
+-------------------------- 
+
+ - Package, pip3 install flask
+ - Package, pip3 install flask-mysqldb
+ - In editor, from flask import Flask
+ - In editor, from flask import Flask, render_template
+ - In editor, from flask import Flask, render_template, request 
+ - In editor, from flask_mysqldb import MySQL
+ - In editor, import yaml
+ - In editor, app.run(debug=True)
+
+ 
